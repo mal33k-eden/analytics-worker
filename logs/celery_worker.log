@@ -1,0 +1,857 @@
+[2025-05-21 13:15:41,923: DEBUG/MainProcess] | Worker: Preparing bootsteps.
+[2025-05-21 13:15:41,924: DEBUG/MainProcess] | Worker: Building graph...
+[2025-05-21 13:15:41,924: DEBUG/MainProcess] | Worker: New boot order: {Timer, Hub, Pool, Autoscaler, Beat, StateDB, Consumer}
+[2025-05-21 13:15:41,927: DEBUG/MainProcess] | Consumer: Preparing bootsteps.
+[2025-05-21 13:15:41,928: DEBUG/MainProcess] | Consumer: Building graph...
+[2025-05-21 13:15:41,933: DEBUG/MainProcess] | Consumer: New boot order: {Connection, Events, Mingle, Tasks, Control, DelayedDelivery, Heart, Agent, Gossip, event loop}
+[2025-05-21 13:15:41,952: DEBUG/MainProcess] | Worker: Starting Hub
+[2025-05-21 13:15:41,952: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:15:41,952: DEBUG/MainProcess] | Worker: Starting Pool
+[2025-05-21 13:15:42,285: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:15:42,285: DEBUG/MainProcess] | Worker: Starting Consumer
+[2025-05-21 13:15:42,286: DEBUG/MainProcess] | Consumer: Starting Connection
+[2025-05-21 13:15:42,296: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2025-05-21 13:15:42,296: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:15:42,296: DEBUG/MainProcess] | Consumer: Starting Events
+[2025-05-21 13:15:42,298: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:15:42,298: DEBUG/MainProcess] | Consumer: Starting Mingle
+[2025-05-21 13:15:42,298: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-21 13:15:42,302: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'f38f844b-c254-33a3-af13-20f4abce1dbb'} ticket:18236030-6274-4e46-a1d6-134408e4516e]
+[2025-05-21 13:15:42,302: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'f38f844b-c254-33a3-af13-20f4abce1dbb'} ticket:18236030-6274-4e46-a1d6-134408e4516e]
+[2025-05-21 13:15:42,302: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'f38f844b-c254-33a3-af13-20f4abce1dbb'} ticket:18236030-6274-4e46-a1d6-134408e4516e]
+[2025-05-21 13:15:42,302: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'f38f844b-c254-33a3-af13-20f4abce1dbb'} ticket:18236030-6274-4e46-a1d6-134408e4516e]
+[2025-05-21 13:15:42,302: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'f38f844b-c254-33a3-af13-20f4abce1dbb'} ticket:18236030-6274-4e46-a1d6-134408e4516e]
+[2025-05-21 13:15:42,302: INFO/MainProcess] sync with celery@Emmanuels-MacBook-Pro.local
+[2025-05-21 13:15:42,302: INFO/MainProcess] sync with celery@Emmanuels-MacBook-Pro.local
+[2025-05-21 13:15:42,302: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'f38f844b-c254-33a3-af13-20f4abce1dbb'} ticket:18236030-6274-4e46-a1d6-134408e4516e]
+[2025-05-21 13:15:42,303: INFO/MainProcess] sync with celery@Emmanuels-MacBook-Pro.local
+[2025-05-21 13:15:43,402: WARNING/MainProcess] /Users/emmanueltartey/PycharmProjects/analytics_worker/.venv/lib/python3.9/site-packages/celery/app/control.py:56: DuplicateNodenameWarning: Received multiple replies from node names: celery@Emmanuels-MacBook-Pro.local, celery@ip-10-0-0-123.us-east-2.compute.internal.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[2025-05-21 13:15:43,402: INFO/MainProcess] mingle: sync with 1 nodes
+[2025-05-21 13:15:43,402: DEBUG/MainProcess] mingle: processing reply from celery@ip-10-0-0-123.us-east-2.compute.internal
+[2025-05-21 13:15:43,402: INFO/MainProcess] mingle: sync complete
+[2025-05-21 13:15:43,403: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:15:43,403: DEBUG/MainProcess] | Consumer: Starting Tasks
+[2025-05-21 13:15:43,406: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:15:43,406: DEBUG/MainProcess] | Consumer: Starting Control
+[2025-05-21 13:15:43,411: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:15:43,411: DEBUG/MainProcess] | Consumer: Starting Heart
+[2025-05-21 13:15:43,413: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:15:43,413: DEBUG/MainProcess] | Consumer: Starting Gossip
+[2025-05-21 13:15:43,413: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:15:43,413: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:15:43,413: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:15:43,436: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:15:43,436: DEBUG/MainProcess] | Consumer: Starting event loop
+[2025-05-21 13:15:43,436: DEBUG/MainProcess] | Worker: Hub.register Pool...
+[2025-05-21 13:15:43,437: INFO/MainProcess] celery@Emmanuels-MacBook-Pro.local ready.
+[2025-05-21 13:15:43,437: DEBUG/MainProcess] basic.qos: prefetch_count->10
+[2025-05-21 13:15:43,922: DEBUG/MainProcess] celery@ip-10-0-0-123.us-east-2.compute.internal joined the party
+[2025-05-21 13:16:25,317: DEBUG/MainProcess] | Worker: Preparing bootsteps.
+[2025-05-21 13:16:25,318: DEBUG/MainProcess] | Worker: Building graph...
+[2025-05-21 13:16:25,318: DEBUG/MainProcess] | Worker: New boot order: {Timer, Hub, Pool, Autoscaler, Beat, StateDB, Consumer}
+[2025-05-21 13:16:25,321: DEBUG/MainProcess] | Consumer: Preparing bootsteps.
+[2025-05-21 13:16:25,322: DEBUG/MainProcess] | Consumer: Building graph...
+[2025-05-21 13:16:25,327: DEBUG/MainProcess] | Consumer: New boot order: {Connection, Agent, Events, Mingle, Tasks, DelayedDelivery, Gossip, Heart, Control, event loop}
+[2025-05-21 13:16:25,347: DEBUG/MainProcess] | Worker: Starting Hub
+[2025-05-21 13:16:25,348: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:16:25,348: DEBUG/MainProcess] | Worker: Starting Pool
+[2025-05-21 13:16:25,780: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:16:25,780: DEBUG/MainProcess] | Worker: Starting Consumer
+[2025-05-21 13:16:25,780: DEBUG/MainProcess] | Consumer: Starting Connection
+[2025-05-21 13:16:25,789: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2025-05-21 13:16:25,790: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:16:25,791: DEBUG/MainProcess] | Consumer: Starting Events
+[2025-05-21 13:16:25,794: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:16:25,794: DEBUG/MainProcess] | Consumer: Starting Mingle
+[2025-05-21 13:16:25,794: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-21 13:16:25,798: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '94836964-1641-3c7f-9a4b-0cc5795600be'} ticket:85797b3d-330d-4045-a12c-a1db5f5a62ed]
+[2025-05-21 13:16:25,798: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '94836964-1641-3c7f-9a4b-0cc5795600be'} ticket:85797b3d-330d-4045-a12c-a1db5f5a62ed]
+[2025-05-21 13:16:25,798: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '94836964-1641-3c7f-9a4b-0cc5795600be'} ticket:85797b3d-330d-4045-a12c-a1db5f5a62ed]
+[2025-05-21 13:16:25,798: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '94836964-1641-3c7f-9a4b-0cc5795600be'} ticket:85797b3d-330d-4045-a12c-a1db5f5a62ed]
+[2025-05-21 13:16:25,798: INFO/MainProcess] sync with celery@Emmanuels-MacBook-Pro.local
+[2025-05-21 13:16:25,798: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '94836964-1641-3c7f-9a4b-0cc5795600be'} ticket:85797b3d-330d-4045-a12c-a1db5f5a62ed]
+[2025-05-21 13:16:25,798: INFO/MainProcess] sync with celery@Emmanuels-MacBook-Pro.local
+[2025-05-21 13:16:25,799: INFO/MainProcess] sync with celery@Emmanuels-MacBook-Pro.local
+[2025-05-21 13:16:25,798: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '94836964-1641-3c7f-9a4b-0cc5795600be'} ticket:85797b3d-330d-4045-a12c-a1db5f5a62ed]
+[2025-05-21 13:16:25,799: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '94836964-1641-3c7f-9a4b-0cc5795600be'} ticket:85797b3d-330d-4045-a12c-a1db5f5a62ed]
+[2025-05-21 13:16:26,882: WARNING/MainProcess] /Users/emmanueltartey/PycharmProjects/analytics_worker/.venv/lib/python3.9/site-packages/celery/app/control.py:56: DuplicateNodenameWarning: Received multiple replies from node names: celery@Emmanuels-MacBook-Pro.local, celery@ip-10-0-0-123.us-east-2.compute.internal.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[2025-05-21 13:16:26,882: INFO/MainProcess] mingle: sync with 1 nodes
+[2025-05-21 13:16:26,882: DEBUG/MainProcess] mingle: processing reply from celery@ip-10-0-0-123.us-east-2.compute.internal
+[2025-05-21 13:16:26,882: INFO/MainProcess] mingle: sync complete
+[2025-05-21 13:16:26,883: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:16:26,883: DEBUG/MainProcess] | Consumer: Starting Tasks
+[2025-05-21 13:16:26,888: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:16:26,888: DEBUG/MainProcess] | Consumer: Starting Gossip
+[2025-05-21 13:16:26,893: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:16:26,893: DEBUG/MainProcess] | Consumer: Starting Heart
+[2025-05-21 13:16:26,907: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:16:26,907: DEBUG/MainProcess] | Consumer: Starting Control
+[2025-05-21 13:16:26,907: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:16:26,907: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:16:26,908: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:16:26,921: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:16:26,921: DEBUG/MainProcess] | Consumer: Starting event loop
+[2025-05-21 13:16:26,921: DEBUG/MainProcess] | Worker: Hub.register Pool...
+[2025-05-21 13:16:26,922: INFO/MainProcess] celery@Emmanuels-MacBook-Pro.local ready.
+[2025-05-21 13:16:26,922: DEBUG/MainProcess] basic.qos: prefetch_count->10
+[2025-05-21 13:16:28,030: DEBUG/MainProcess] celery@ip-10-0-0-123.us-east-2.compute.internal joined the party
+[2025-05-21 13:16:44,545: DEBUG/MainProcess] | Worker: Preparing bootsteps.
+[2025-05-21 13:16:44,555: DEBUG/MainProcess] | Worker: Building graph...
+[2025-05-21 13:16:44,555: DEBUG/MainProcess] | Worker: New boot order: {Beat, Timer, Hub, Pool, Autoscaler, StateDB, Consumer}
+[2025-05-21 13:16:44,559: DEBUG/MainProcess] | Consumer: Preparing bootsteps.
+[2025-05-21 13:16:44,560: DEBUG/MainProcess] | Consumer: Building graph...
+[2025-05-21 13:16:44,568: DEBUG/MainProcess] | Consumer: New boot order: {Connection, Agent, Events, Mingle, Tasks, Control, Heart, DelayedDelivery, Gossip, event loop}
+[2025-05-21 13:16:44,586: DEBUG/MainProcess] | Worker: Starting Hub
+[2025-05-21 13:16:44,586: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:16:44,586: DEBUG/MainProcess] | Worker: Starting Pool
+[2025-05-21 13:16:44,997: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:16:44,997: DEBUG/MainProcess] | Worker: Starting Consumer
+[2025-05-21 13:16:44,997: DEBUG/MainProcess] | Consumer: Starting Connection
+[2025-05-21 13:16:45,009: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2025-05-21 13:16:45,009: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:16:45,009: DEBUG/MainProcess] | Consumer: Starting Events
+[2025-05-21 13:16:45,010: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:16:45,010: DEBUG/MainProcess] | Consumer: Starting Mingle
+[2025-05-21 13:16:45,011: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-21 13:16:45,016: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '6550aa49-374d-3b62-8f58-89046a656d48'} ticket:9a7fa5d2-978b-406d-bd64-667598cc2bae]
+[2025-05-21 13:16:45,016: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '6550aa49-374d-3b62-8f58-89046a656d48'} ticket:9a7fa5d2-978b-406d-bd64-667598cc2bae]
+[2025-05-21 13:16:45,016: INFO/MainProcess] sync with celery@Emmanuels-MacBook-Pro.local
+[2025-05-21 13:16:45,016: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '6550aa49-374d-3b62-8f58-89046a656d48'} ticket:9a7fa5d2-978b-406d-bd64-667598cc2bae]
+[2025-05-21 13:16:45,016: INFO/MainProcess] sync with celery@Emmanuels-MacBook-Pro.local
+[2025-05-21 13:16:45,016: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '6550aa49-374d-3b62-8f58-89046a656d48'} ticket:9a7fa5d2-978b-406d-bd64-667598cc2bae]
+[2025-05-21 13:16:45,017: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '6550aa49-374d-3b62-8f58-89046a656d48'} ticket:9a7fa5d2-978b-406d-bd64-667598cc2bae]
+[2025-05-21 13:16:45,017: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '6550aa49-374d-3b62-8f58-89046a656d48'} ticket:9a7fa5d2-978b-406d-bd64-667598cc2bae]
+[2025-05-21 13:16:45,018: INFO/MainProcess] sync with celery@Emmanuels-MacBook-Pro.local
+[2025-05-21 13:16:45,016: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '6550aa49-374d-3b62-8f58-89046a656d48'} ticket:9a7fa5d2-978b-406d-bd64-667598cc2bae]
+[2025-05-21 13:16:45,018: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '6550aa49-374d-3b62-8f58-89046a656d48'} ticket:9a7fa5d2-978b-406d-bd64-667598cc2bae]
+[2025-05-21 13:16:46,150: WARNING/MainProcess] /Users/emmanueltartey/PycharmProjects/analytics_worker/.venv/lib/python3.9/site-packages/celery/app/control.py:56: DuplicateNodenameWarning: Received multiple replies from node names: celery@Emmanuels-MacBook-Pro.local, celery@ip-10-0-0-123.us-east-2.compute.internal.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[2025-05-21 13:16:46,151: INFO/MainProcess] mingle: sync with 1 nodes
+[2025-05-21 13:16:46,151: DEBUG/MainProcess] mingle: processing reply from celery@ip-10-0-0-123.us-east-2.compute.internal
+[2025-05-21 13:16:46,151: INFO/MainProcess] mingle: sync complete
+[2025-05-21 13:16:46,151: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:16:46,151: DEBUG/MainProcess] | Consumer: Starting Tasks
+[2025-05-21 13:16:46,153: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:16:46,154: DEBUG/MainProcess] | Consumer: Starting Control
+[2025-05-21 13:16:46,157: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:16:46,157: DEBUG/MainProcess] | Consumer: Starting Heart
+[2025-05-21 13:16:46,158: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:16:46,159: DEBUG/MainProcess] | Consumer: Starting Gossip
+[2025-05-21 13:16:46,159: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:16:46,159: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:16:46,159: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:16:46,173: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:16:46,173: DEBUG/MainProcess] | Consumer: Starting event loop
+[2025-05-21 13:16:46,174: DEBUG/MainProcess] | Worker: Hub.register Pool...
+[2025-05-21 13:16:46,174: INFO/MainProcess] celery@Emmanuels-MacBook-Pro.local ready.
+[2025-05-21 13:16:46,174: DEBUG/MainProcess] basic.qos: prefetch_count->10
+[2025-05-21 13:16:46,616: DEBUG/MainProcess] celery@ip-10-0-0-123.us-east-2.compute.internal joined the party
+[2025-05-21 13:16:46,880: INFO/MainProcess] Task app.pipeline.processor.process_analytics_batch[fdfa72d7-6ce4-4464-b2af-2964ddedb226] received
+[2025-05-21 13:16:46,880: DEBUG/MainProcess] TaskPool: Apply <function fast_trace_task at 0x104624820> (args:('app.pipeline.processor.process_analytics_batch', 'fdfa72d7-6ce4-4464-b2af-2964ddedb226', {'lang': 'py', 'task': 'app.pipeline.processor.process_analytics_batch', 'id': 'fdfa72d7-6ce4-4464-b2af-2964ddedb226', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'fdfa72d7-6ce4-4464-b2af-2964ddedb226', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': "{'batch_size': 1000}", 'origin': 'gen40923@Emmanuels-MacBook-Pro.local', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}, 'properties': {'correlation_id': 'fdfa72d7-6ce4-4464-b2af-2964ddedb226', 'reply_to': '60c3b8ff-359d-3967-9181-29edc68654fc', 'delivery_mode': 2, 'delivery_info': {'exchange': '', 'routing_key': 'celery'}, 'priority': 0, 'body_encoding': 'base64', 'delivery_tag': 'faba99e8-c5e5-4936-9470-65353fb6abd9'}, 'reply_to': '60c3b8ff-359d-3967-9181-29edc68654fc', 'correlation_id': 'fdfa72d7-6ce4-4464-b2af-2964ddedb226',... kwargs:{})
+[2025-05-21 13:16:46,882: INFO/ForkPoolWorker-7] app.pipeline.processor.process_analytics_batch[fdfa72d7-6ce4-4464-b2af-2964ddedb226]: Starting analytics batch processing with size 1000
+[2025-05-21 13:16:46,929: INFO/ForkPoolWorker-7] app.pipeline.processor.process_analytics_batch[fdfa72d7-6ce4-4464-b2af-2964ddedb226]: Found 23 unprocessed analytics rows
+[2025-05-21 13:16:46,930: DEBUG/ForkPoolWorker-7] app.pipeline.processor.process_analytics_batch[fdfa72d7-6ce4-4464-b2af-2964ddedb226]: Sample row: id=0de9a27d-ae34-4f4b-8fb9-efce7a6ce264, event_name=account_create
+[2025-05-21 13:16:46,930: INFO/ForkPoolWorker-7] Initializing AmplitudeTracker with API key: d68a...
+[2025-05-21 13:16:46,930: INFO/ForkPoolWorker-7] AmplitudeTracker initialized successfully
+[2025-05-21 13:16:46,930: INFO/ForkPoolWorker-7] app.pipeline.processor.process_analytics_batch[fdfa72d7-6ce4-4464-b2af-2964ddedb226]: AmplitudeTracker initialized
+[2025-05-21 13:16:46,931: INFO/ForkPoolWorker-7] Starting to track 23 events
+[2025-05-21 13:16:46,931: DEBUG/ForkPoolWorker-7] Sample event: event_name=account_create, identity={'amplitude': {'device_id': '3e7c2bbf-73b5-4a4c-8678-acdee73601af'}}
+[2025-05-21 13:16:46,933: INFO/ForkPoolWorker-7] Successfully tracked 23/23 events
+[2025-05-21 13:16:46,933: INFO/ForkPoolWorker-7] app.pipeline.processor.process_analytics_batch[fdfa72d7-6ce4-4464-b2af-2964ddedb226]: Successfully tracked events in Amplitude
+[2025-05-21 13:16:46,933: INFO/ForkPoolWorker-7] Flushing events to Amplitude...
+[2025-05-21 13:16:46,935: INFO/ForkPoolWorker-7] Flush completed with result: [<Future at 0x10840c1c0 state=running>]
+[2025-05-21 13:16:46,940: INFO/ForkPoolWorker-7] app.pipeline.processor.process_analytics_batch[fdfa72d7-6ce4-4464-b2af-2964ddedb226]: Successfully flushed events to Amplitude
+[2025-05-21 13:16:46,940: INFO/ForkPoolWorker-7] app.pipeline.processor.process_analytics_batch[fdfa72d7-6ce4-4464-b2af-2964ddedb226]: Marking 23 rows as processed
+[2025-05-21 13:16:46,941: INFO/ForkPoolWorker-7] app.pipeline.processor.process_analytics_batch[fdfa72d7-6ce4-4464-b2af-2964ddedb226]: Successfully processed 23 rows
+[2025-05-21 13:16:46,941: DEBUG/ForkPoolWorker-7] app.pipeline.processor.process_analytics_batch[fdfa72d7-6ce4-4464-b2af-2964ddedb226]: Closing database session
+[2025-05-21 13:16:46,952: INFO/ForkPoolWorker-7] Task app.pipeline.processor.process_analytics_batch[fdfa72d7-6ce4-4464-b2af-2964ddedb226] succeeded in 0.07013462500000012s: {'status': 'success', 'rows_processed': 23, 'processed_at': '2025-05-21T20:16:46.940882'}
+[2025-05-21 13:16:47,145: INFO/ForkPoolWorker-7] Event sent successfully.
+[2025-05-21 13:16:47,145: INFO/ForkPoolWorker-7] Event sent successfully.
+[2025-05-21 13:16:47,146: INFO/ForkPoolWorker-7] Event sent successfully.
+[2025-05-21 13:16:47,146: INFO/ForkPoolWorker-7] Event sent successfully.
+[2025-05-21 13:16:47,146: INFO/ForkPoolWorker-7] Event sent successfully.
+[2025-05-21 13:16:47,146: INFO/ForkPoolWorker-7] Event sent successfully.
+[2025-05-21 13:16:47,147: INFO/ForkPoolWorker-7] Event sent successfully.
+[2025-05-21 13:16:47,147: INFO/ForkPoolWorker-7] Event sent successfully.
+[2025-05-21 13:16:47,147: INFO/ForkPoolWorker-7] Event sent successfully.
+[2025-05-21 13:16:47,147: INFO/ForkPoolWorker-7] Event sent successfully.
+[2025-05-21 13:16:47,147: INFO/ForkPoolWorker-7] Event sent successfully.
+[2025-05-21 13:16:47,147: INFO/ForkPoolWorker-7] Event sent successfully.
+[2025-05-21 13:16:47,148: INFO/ForkPoolWorker-7] Event sent successfully.
+[2025-05-21 13:16:47,148: INFO/ForkPoolWorker-7] Event sent successfully.
+[2025-05-21 13:16:47,148: INFO/ForkPoolWorker-7] Event sent successfully.
+[2025-05-21 13:16:47,149: INFO/ForkPoolWorker-7] Event sent successfully.
+[2025-05-21 13:16:47,149: INFO/ForkPoolWorker-7] Event sent successfully.
+[2025-05-21 13:16:47,149: INFO/ForkPoolWorker-7] Event sent successfully.
+[2025-05-21 13:16:47,150: INFO/ForkPoolWorker-7] Event sent successfully.
+[2025-05-21 13:16:47,150: INFO/ForkPoolWorker-7] Event sent successfully.
+[2025-05-21 13:16:47,151: INFO/ForkPoolWorker-7] Event sent successfully.
+[2025-05-21 13:16:47,151: INFO/ForkPoolWorker-7] Event sent successfully.
+[2025-05-21 13:16:47,151: INFO/ForkPoolWorker-7] Event sent successfully.
+[2025-05-21 13:24:46,327: DEBUG/MainProcess] | Worker: Closing Hub...
+[2025-05-21 13:24:46,328: DEBUG/MainProcess] | Worker: Closing Pool...
+[2025-05-21 13:24:46,328: DEBUG/MainProcess] | Worker: Closing Consumer...
+[2025-05-21 13:24:46,328: DEBUG/MainProcess] | Worker: Stopping Consumer...
+[2025-05-21 13:24:46,328: DEBUG/MainProcess] | Consumer: Closing Connection...
+[2025-05-21 13:24:46,328: DEBUG/MainProcess] | Consumer: Closing Events...
+[2025-05-21 13:24:46,328: DEBUG/MainProcess] | Consumer: Closing Mingle...
+[2025-05-21 13:24:46,328: DEBUG/MainProcess] | Consumer: Closing Tasks...
+[2025-05-21 13:24:46,328: DEBUG/MainProcess] | Consumer: Closing Control...
+[2025-05-21 13:24:46,328: DEBUG/MainProcess] | Consumer: Closing Heart...
+[2025-05-21 13:24:46,328: DEBUG/MainProcess] | Consumer: Closing Gossip...
+[2025-05-21 13:24:46,328: DEBUG/MainProcess] | Consumer: Closing event loop...
+[2025-05-21 13:24:46,328: DEBUG/MainProcess] | Consumer: Stopping event loop...
+[2025-05-21 13:24:46,328: DEBUG/MainProcess] | Consumer: Stopping Gossip...
+[2025-05-21 13:24:46,341: DEBUG/MainProcess] | Consumer: Stopping Heart...
+[2025-05-21 13:24:46,341: DEBUG/MainProcess] | Consumer: Stopping Control...
+[2025-05-21 13:24:46,342: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local left
+[2025-05-21 13:24:46,342: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local left
+[2025-05-21 13:24:46,342: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local left
+[2025-05-21 13:24:46,354: DEBUG/MainProcess] | Consumer: Stopping Tasks...
+[2025-05-21 13:24:46,354: DEBUG/MainProcess] Canceling task consumer...
+[2025-05-21 13:24:46,354: DEBUG/MainProcess] | Consumer: Stopping Mingle...
+[2025-05-21 13:24:46,354: DEBUG/MainProcess] | Consumer: Stopping Events...
+[2025-05-21 13:24:46,354: DEBUG/MainProcess] | Consumer: Stopping Connection...
+[2025-05-21 13:24:46,354: DEBUG/MainProcess] | Worker: Stopping Pool...
+[2025-05-21 13:24:46,426: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:24:46,427: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:24:46,428: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:24:47,379: DEBUG/MainProcess] | Worker: Stopping Hub...
+[2025-05-21 13:24:47,379: DEBUG/MainProcess] | Consumer: Shutdown Gossip...
+[2025-05-21 13:24:47,379: DEBUG/MainProcess] | Consumer: Shutdown Heart...
+[2025-05-21 13:24:47,379: DEBUG/MainProcess] | Consumer: Shutdown Control...
+[2025-05-21 13:24:47,379: DEBUG/MainProcess] | Consumer: Shutdown Tasks...
+[2025-05-21 13:24:47,379: DEBUG/MainProcess] Canceling task consumer...
+[2025-05-21 13:24:47,379: DEBUG/MainProcess] Closing consumer channel...
+[2025-05-21 13:24:47,379: DEBUG/MainProcess] | Consumer: Shutdown Events...
+[2025-05-21 13:24:47,379: DEBUG/MainProcess] | Consumer: Shutdown Connection...
+[2025-05-21 13:24:47,380: DEBUG/MainProcess] removing tasks from inqueue until task handler finished
+[2025-05-21 13:24:49,102: DEBUG/MainProcess] | Worker: Preparing bootsteps.
+[2025-05-21 13:24:49,103: DEBUG/MainProcess] | Worker: Building graph...
+[2025-05-21 13:24:49,103: DEBUG/MainProcess] | Worker: New boot order: {Beat, StateDB, Timer, Hub, Pool, Autoscaler, Consumer}
+[2025-05-21 13:24:49,106: DEBUG/MainProcess] | Consumer: Preparing bootsteps.
+[2025-05-21 13:24:49,106: DEBUG/MainProcess] | Consumer: Building graph...
+[2025-05-21 13:24:49,112: DEBUG/MainProcess] | Consumer: New boot order: {Connection, Agent, Events, Mingle, Tasks, Control, DelayedDelivery, Heart, Gossip, event loop}
+[2025-05-21 13:24:49,131: DEBUG/MainProcess] | Worker: Starting Hub
+[2025-05-21 13:24:49,131: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:24:49,131: DEBUG/MainProcess] | Worker: Starting Pool
+[2025-05-21 13:24:49,440: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:24:49,440: DEBUG/MainProcess] | Worker: Starting Consumer
+[2025-05-21 13:24:49,441: DEBUG/MainProcess] | Consumer: Starting Connection
+[2025-05-21 13:24:49,445: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2025-05-21 13:24:49,445: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:24:49,446: DEBUG/MainProcess] | Consumer: Starting Events
+[2025-05-21 13:24:49,447: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:24:49,447: DEBUG/MainProcess] | Consumer: Starting Mingle
+[2025-05-21 13:24:49,447: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-21 13:24:49,451: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '94afe495-120f-3b7d-8540-86238ac200a9'} ticket:2515308e-2e44-4e1c-8d14-1475cb761732]
+[2025-05-21 13:24:49,452: INFO/MainProcess] sync with celery@Emmanuels-MacBook-Pro.local
+[2025-05-21 13:24:49,452: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '94afe495-120f-3b7d-8540-86238ac200a9'} ticket:2515308e-2e44-4e1c-8d14-1475cb761732]
+[2025-05-21 13:24:49,452: INFO/MainProcess] sync with celery@Emmanuels-MacBook-Pro.local
+[2025-05-21 13:24:49,452: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '94afe495-120f-3b7d-8540-86238ac200a9'} ticket:2515308e-2e44-4e1c-8d14-1475cb761732]
+[2025-05-21 13:24:49,452: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '94afe495-120f-3b7d-8540-86238ac200a9'} ticket:2515308e-2e44-4e1c-8d14-1475cb761732]
+[2025-05-21 13:24:49,452: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '94afe495-120f-3b7d-8540-86238ac200a9'} ticket:2515308e-2e44-4e1c-8d14-1475cb761732]
+[2025-05-21 13:24:49,452: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '94afe495-120f-3b7d-8540-86238ac200a9'} ticket:2515308e-2e44-4e1c-8d14-1475cb761732]
+[2025-05-21 13:24:49,452: INFO/MainProcess] sync with celery@Emmanuels-MacBook-Pro.local
+[2025-05-21 13:24:49,451: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '94afe495-120f-3b7d-8540-86238ac200a9'} ticket:2515308e-2e44-4e1c-8d14-1475cb761732]
+[2025-05-21 13:24:49,453: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '94afe495-120f-3b7d-8540-86238ac200a9'} ticket:2515308e-2e44-4e1c-8d14-1475cb761732]
+[2025-05-21 13:24:50,515: WARNING/MainProcess] /Users/emmanueltartey/PycharmProjects/analytics_worker/.venv/lib/python3.9/site-packages/celery/app/control.py:56: DuplicateNodenameWarning: Received multiple replies from node names: celery@Emmanuels-MacBook-Pro.local, celery@ip-10-0-0-123.us-east-2.compute.internal.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[2025-05-21 13:24:50,515: INFO/MainProcess] mingle: sync with 1 nodes
+[2025-05-21 13:24:50,515: DEBUG/MainProcess] mingle: processing reply from celery@ip-10-0-0-123.us-east-2.compute.internal
+[2025-05-21 13:24:50,515: INFO/MainProcess] mingle: sync complete
+[2025-05-21 13:24:50,516: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:24:50,516: DEBUG/MainProcess] | Consumer: Starting Tasks
+[2025-05-21 13:24:50,518: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:24:50,518: DEBUG/MainProcess] | Consumer: Starting Control
+[2025-05-21 13:24:50,521: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:24:50,521: DEBUG/MainProcess] | Consumer: Starting Heart
+[2025-05-21 13:24:50,522: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:24:50,522: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:24:50,522: DEBUG/MainProcess] | Consumer: Starting Gossip
+[2025-05-21 13:24:50,522: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:24:50,522: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:24:50,526: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:24:50,526: DEBUG/MainProcess] | Consumer: Starting event loop
+[2025-05-21 13:24:50,526: DEBUG/MainProcess] | Worker: Hub.register Pool...
+[2025-05-21 13:24:50,526: INFO/MainProcess] celery@Emmanuels-MacBook-Pro.local ready.
+[2025-05-21 13:24:50,526: DEBUG/MainProcess] basic.qos: prefetch_count->10
+[2025-05-21 13:24:51,681: DEBUG/MainProcess] celery@ip-10-0-0-123.us-east-2.compute.internal joined the party
+[2025-05-21 13:25:48,993: DEBUG/MainProcess] | Worker: Preparing bootsteps.
+[2025-05-21 13:25:48,994: DEBUG/MainProcess] | Worker: Building graph...
+[2025-05-21 13:25:48,994: DEBUG/MainProcess] | Worker: New boot order: {StateDB, Beat, Timer, Hub, Pool, Autoscaler, Consumer}
+[2025-05-21 13:25:48,997: DEBUG/MainProcess] | Consumer: Preparing bootsteps.
+[2025-05-21 13:25:48,997: DEBUG/MainProcess] | Consumer: Building graph...
+[2025-05-21 13:25:49,003: DEBUG/MainProcess] | Consumer: New boot order: {Connection, Agent, Events, Mingle, Tasks, Control, DelayedDelivery, Heart, Gossip, event loop}
+[2025-05-21 13:25:49,018: DEBUG/MainProcess] | Worker: Starting Hub
+[2025-05-21 13:25:49,018: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:25:49,018: DEBUG/MainProcess] | Worker: Starting Pool
+[2025-05-21 13:25:49,353: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:25:49,353: DEBUG/MainProcess] | Worker: Starting Consumer
+[2025-05-21 13:25:49,353: DEBUG/MainProcess] | Consumer: Starting Connection
+[2025-05-21 13:25:49,358: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2025-05-21 13:25:49,358: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:25:49,358: DEBUG/MainProcess] | Consumer: Starting Events
+[2025-05-21 13:25:49,360: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:25:49,360: DEBUG/MainProcess] | Consumer: Starting Mingle
+[2025-05-21 13:25:49,360: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-21 13:25:49,364: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '74114851-d1ea-3c34-98a2-06d0554698ec'} ticket:cd6d4a90-fb0d-44f0-a8b0-af0867da6619]
+[2025-05-21 13:25:49,364: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '74114851-d1ea-3c34-98a2-06d0554698ec'} ticket:cd6d4a90-fb0d-44f0-a8b0-af0867da6619]
+[2025-05-21 13:25:49,364: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '74114851-d1ea-3c34-98a2-06d0554698ec'} ticket:cd6d4a90-fb0d-44f0-a8b0-af0867da6619]
+[2025-05-21 13:25:49,365: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '74114851-d1ea-3c34-98a2-06d0554698ec'} ticket:cd6d4a90-fb0d-44f0-a8b0-af0867da6619]
+[2025-05-21 13:25:49,365: INFO/MainProcess] sync with celery@Emmanuels-MacBook-Pro.local
+[2025-05-21 13:25:49,365: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '74114851-d1ea-3c34-98a2-06d0554698ec'} ticket:cd6d4a90-fb0d-44f0-a8b0-af0867da6619]
+[2025-05-21 13:25:49,365: INFO/MainProcess] sync with celery@Emmanuels-MacBook-Pro.local
+[2025-05-21 13:25:49,366: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '74114851-d1ea-3c34-98a2-06d0554698ec'} ticket:cd6d4a90-fb0d-44f0-a8b0-af0867da6619]
+[2025-05-21 13:25:49,366: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '74114851-d1ea-3c34-98a2-06d0554698ec'} ticket:cd6d4a90-fb0d-44f0-a8b0-af0867da6619]
+[2025-05-21 13:25:49,366: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '74114851-d1ea-3c34-98a2-06d0554698ec'} ticket:cd6d4a90-fb0d-44f0-a8b0-af0867da6619]
+[2025-05-21 13:25:49,367: INFO/MainProcess] sync with celery@Emmanuels-MacBook-Pro.local
+[2025-05-21 13:25:49,367: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '74114851-d1ea-3c34-98a2-06d0554698ec'} ticket:cd6d4a90-fb0d-44f0-a8b0-af0867da6619]
+[2025-05-21 13:25:50,454: WARNING/MainProcess] /Users/emmanueltartey/PycharmProjects/analytics_worker/.venv/lib/python3.9/site-packages/celery/app/control.py:56: DuplicateNodenameWarning: Received multiple replies from node names: celery@Emmanuels-MacBook-Pro.local, celery@ip-10-0-0-123.us-east-2.compute.internal.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[2025-05-21 13:25:50,454: INFO/MainProcess] mingle: sync with 1 nodes
+[2025-05-21 13:25:50,454: DEBUG/MainProcess] mingle: processing reply from celery@ip-10-0-0-123.us-east-2.compute.internal
+[2025-05-21 13:25:50,454: INFO/MainProcess] mingle: sync complete
+[2025-05-21 13:25:50,454: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:25:50,454: DEBUG/MainProcess] | Consumer: Starting Tasks
+[2025-05-21 13:25:50,473: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:25:50,473: DEBUG/MainProcess] | Consumer: Starting Control
+[2025-05-21 13:25:50,479: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:25:50,479: DEBUG/MainProcess] | Consumer: Starting Heart
+[2025-05-21 13:25:50,481: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:25:50,481: DEBUG/MainProcess] | Consumer: Starting Gossip
+[2025-05-21 13:25:50,481: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:25:50,481: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:25:50,481: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:25:50,488: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:25:50,488: DEBUG/MainProcess] | Consumer: Starting event loop
+[2025-05-21 13:25:50,488: DEBUG/MainProcess] | Worker: Hub.register Pool...
+[2025-05-21 13:25:50,489: INFO/MainProcess] celery@Emmanuels-MacBook-Pro.local ready.
+[2025-05-21 13:25:50,489: DEBUG/MainProcess] basic.qos: prefetch_count->10
+[2025-05-21 13:25:51,837: DEBUG/MainProcess] celery@ip-10-0-0-123.us-east-2.compute.internal joined the party
+[2025-05-21 13:27:09,369: DEBUG/MainProcess] | Worker: Preparing bootsteps.
+[2025-05-21 13:27:09,369: DEBUG/MainProcess] | Worker: Building graph...
+[2025-05-21 13:27:09,370: DEBUG/MainProcess] | Worker: New boot order: {Timer, Hub, Pool, Autoscaler, Beat, StateDB, Consumer}
+[2025-05-21 13:27:09,372: DEBUG/MainProcess] | Consumer: Preparing bootsteps.
+[2025-05-21 13:27:09,373: DEBUG/MainProcess] | Consumer: Building graph...
+[2025-05-21 13:27:09,378: DEBUG/MainProcess] | Consumer: New boot order: {Connection, Events, Heart, Mingle, Tasks, DelayedDelivery, Agent, Gossip, Control, event loop}
+[2025-05-21 13:27:09,398: DEBUG/MainProcess] | Worker: Starting Hub
+[2025-05-21 13:27:09,398: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:27:09,398: DEBUG/MainProcess] | Worker: Starting Pool
+[2025-05-21 13:27:09,746: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:27:09,746: DEBUG/MainProcess] | Worker: Starting Consumer
+[2025-05-21 13:27:09,746: DEBUG/MainProcess] | Consumer: Starting Connection
+[2025-05-21 13:27:09,751: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2025-05-21 13:27:09,752: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:27:09,752: DEBUG/MainProcess] | Consumer: Starting Events
+[2025-05-21 13:27:09,753: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:27:09,753: DEBUG/MainProcess] | Consumer: Starting Heart
+[2025-05-21 13:27:09,755: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:27:09,755: DEBUG/MainProcess] | Consumer: Starting Mingle
+[2025-05-21 13:27:09,755: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-21 13:27:09,755: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:27:09,755: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:27:09,756: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:27:09,768: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '8899ae26-602b-3fab-8dcf-8e437f12b607'} ticket:8743e9f9-cf70-4ad2-a09d-0d77a2503896]
+[2025-05-21 13:27:09,768: INFO/MainProcess] sync with celery@Emmanuels-MacBook-Pro.local
+[2025-05-21 13:27:09,768: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '8899ae26-602b-3fab-8dcf-8e437f12b607'} ticket:8743e9f9-cf70-4ad2-a09d-0d77a2503896]
+[2025-05-21 13:27:09,768: INFO/MainProcess] sync with celery@Emmanuels-MacBook-Pro.local
+[2025-05-21 13:27:09,768: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '8899ae26-602b-3fab-8dcf-8e437f12b607'} ticket:8743e9f9-cf70-4ad2-a09d-0d77a2503896]
+[2025-05-21 13:27:09,768: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '8899ae26-602b-3fab-8dcf-8e437f12b607'} ticket:8743e9f9-cf70-4ad2-a09d-0d77a2503896]
+[2025-05-21 13:27:09,768: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '8899ae26-602b-3fab-8dcf-8e437f12b607'} ticket:8743e9f9-cf70-4ad2-a09d-0d77a2503896]
+[2025-05-21 13:27:09,769: INFO/MainProcess] sync with celery@Emmanuels-MacBook-Pro.local
+[2025-05-21 13:27:09,769: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '8899ae26-602b-3fab-8dcf-8e437f12b607'} ticket:8743e9f9-cf70-4ad2-a09d-0d77a2503896]
+[2025-05-21 13:27:09,769: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '8899ae26-602b-3fab-8dcf-8e437f12b607'} ticket:8743e9f9-cf70-4ad2-a09d-0d77a2503896]
+[2025-05-21 13:27:09,769: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '8899ae26-602b-3fab-8dcf-8e437f12b607'} ticket:8743e9f9-cf70-4ad2-a09d-0d77a2503896]
+[2025-05-21 13:27:09,768: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '8899ae26-602b-3fab-8dcf-8e437f12b607'} ticket:8743e9f9-cf70-4ad2-a09d-0d77a2503896]
+[2025-05-21 13:27:09,770: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '8899ae26-602b-3fab-8dcf-8e437f12b607'} ticket:8743e9f9-cf70-4ad2-a09d-0d77a2503896]
+[2025-05-21 13:27:10,882: WARNING/MainProcess] /Users/emmanueltartey/PycharmProjects/analytics_worker/.venv/lib/python3.9/site-packages/celery/app/control.py:56: DuplicateNodenameWarning: Received multiple replies from node names: celery@Emmanuels-MacBook-Pro.local, celery@ip-10-0-0-123.us-east-2.compute.internal.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[2025-05-21 13:27:10,882: INFO/MainProcess] mingle: sync with 1 nodes
+[2025-05-21 13:27:10,882: DEBUG/MainProcess] mingle: processing reply from celery@ip-10-0-0-123.us-east-2.compute.internal
+[2025-05-21 13:27:10,883: INFO/MainProcess] mingle: sync complete
+[2025-05-21 13:27:10,883: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:27:10,883: DEBUG/MainProcess] | Consumer: Starting Tasks
+[2025-05-21 13:27:10,886: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:27:10,886: DEBUG/MainProcess] | Consumer: Starting Gossip
+[2025-05-21 13:27:10,891: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:27:10,891: DEBUG/MainProcess] | Consumer: Starting Control
+[2025-05-21 13:27:10,894: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:27:10,894: DEBUG/MainProcess] | Consumer: Starting event loop
+[2025-05-21 13:27:10,894: DEBUG/MainProcess] | Worker: Hub.register Pool...
+[2025-05-21 13:27:10,895: INFO/MainProcess] celery@Emmanuels-MacBook-Pro.local ready.
+[2025-05-21 13:27:10,895: DEBUG/MainProcess] basic.qos: prefetch_count->10
+[2025-05-21 13:27:12,104: DEBUG/MainProcess] celery@ip-10-0-0-123.us-east-2.compute.internal joined the party
+[2025-05-21 13:28:16,154: DEBUG/MainProcess] | Worker: Preparing bootsteps.
+[2025-05-21 13:28:16,155: DEBUG/MainProcess] | Worker: Building graph...
+[2025-05-21 13:28:16,155: DEBUG/MainProcess] | Worker: New boot order: {Beat, StateDB, Timer, Hub, Pool, Autoscaler, Consumer}
+[2025-05-21 13:28:16,158: DEBUG/MainProcess] | Consumer: Preparing bootsteps.
+[2025-05-21 13:28:16,159: DEBUG/MainProcess] | Consumer: Building graph...
+[2025-05-21 13:28:16,164: DEBUG/MainProcess] | Consumer: New boot order: {Connection, Events, Mingle, Tasks, DelayedDelivery, Control, Agent, Heart, Gossip, event loop}
+[2025-05-21 13:28:16,179: DEBUG/MainProcess] | Worker: Starting Hub
+[2025-05-21 13:28:16,179: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:28:16,179: DEBUG/MainProcess] | Worker: Starting Pool
+[2025-05-21 13:28:16,496: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:28:16,496: DEBUG/MainProcess] | Worker: Starting Consumer
+[2025-05-21 13:28:16,497: DEBUG/MainProcess] | Consumer: Starting Connection
+[2025-05-21 13:28:16,513: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2025-05-21 13:28:16,513: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:28:16,513: DEBUG/MainProcess] | Consumer: Starting Events
+[2025-05-21 13:28:16,515: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:28:16,515: DEBUG/MainProcess] | Consumer: Starting Mingle
+[2025-05-21 13:28:16,515: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-21 13:28:16,519: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'daf74ac1-a81e-3618-9d44-5e06097e1c4b'} ticket:dddf6cf5-be79-480f-b917-8f6009105fd9]
+[2025-05-21 13:28:16,519: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'daf74ac1-a81e-3618-9d44-5e06097e1c4b'} ticket:dddf6cf5-be79-480f-b917-8f6009105fd9]
+[2025-05-21 13:28:16,519: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'daf74ac1-a81e-3618-9d44-5e06097e1c4b'} ticket:dddf6cf5-be79-480f-b917-8f6009105fd9]
+[2025-05-21 13:28:16,520: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'daf74ac1-a81e-3618-9d44-5e06097e1c4b'} ticket:dddf6cf5-be79-480f-b917-8f6009105fd9]
+[2025-05-21 13:28:16,520: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'daf74ac1-a81e-3618-9d44-5e06097e1c4b'} ticket:dddf6cf5-be79-480f-b917-8f6009105fd9]
+[2025-05-21 13:28:16,520: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'daf74ac1-a81e-3618-9d44-5e06097e1c4b'} ticket:dddf6cf5-be79-480f-b917-8f6009105fd9]
+[2025-05-21 13:28:16,520: INFO/MainProcess] sync with celery@Emmanuels-MacBook-Pro.local
+[2025-05-21 13:28:16,520: INFO/MainProcess] sync with celery@Emmanuels-MacBook-Pro.local
+[2025-05-21 13:28:16,519: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'daf74ac1-a81e-3618-9d44-5e06097e1c4b'} ticket:dddf6cf5-be79-480f-b917-8f6009105fd9]
+[2025-05-21 13:28:16,520: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'daf74ac1-a81e-3618-9d44-5e06097e1c4b'} ticket:dddf6cf5-be79-480f-b917-8f6009105fd9]
+[2025-05-21 13:28:16,521: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'daf74ac1-a81e-3618-9d44-5e06097e1c4b'} ticket:dddf6cf5-be79-480f-b917-8f6009105fd9]
+[2025-05-21 13:28:16,521: INFO/MainProcess] sync with celery@Emmanuels-MacBook-Pro.local
+[2025-05-21 13:28:16,521: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'daf74ac1-a81e-3618-9d44-5e06097e1c4b'} ticket:dddf6cf5-be79-480f-b917-8f6009105fd9]
+[2025-05-21 13:28:16,521: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'daf74ac1-a81e-3618-9d44-5e06097e1c4b'} ticket:dddf6cf5-be79-480f-b917-8f6009105fd9]
+[2025-05-21 13:28:17,602: WARNING/MainProcess] /Users/emmanueltartey/PycharmProjects/analytics_worker/.venv/lib/python3.9/site-packages/celery/app/control.py:56: DuplicateNodenameWarning: Received multiple replies from node names: celery@Emmanuels-MacBook-Pro.local, celery@ip-10-0-0-123.us-east-2.compute.internal.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[2025-05-21 13:28:17,603: INFO/MainProcess] mingle: sync with 1 nodes
+[2025-05-21 13:28:17,603: DEBUG/MainProcess] mingle: processing reply from celery@ip-10-0-0-123.us-east-2.compute.internal
+[2025-05-21 13:28:17,603: INFO/MainProcess] mingle: sync complete
+[2025-05-21 13:28:17,603: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:28:17,603: DEBUG/MainProcess] | Consumer: Starting Tasks
+[2025-05-21 13:28:17,610: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:28:17,610: DEBUG/MainProcess] | Consumer: Starting Control
+[2025-05-21 13:28:17,616: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:28:17,616: DEBUG/MainProcess] | Consumer: Starting Heart
+[2025-05-21 13:28:17,618: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:28:17,618: DEBUG/MainProcess] | Consumer: Starting Gossip
+[2025-05-21 13:28:17,620: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:28:17,621: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:28:17,621: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:28:17,640: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:28:17,640: DEBUG/MainProcess] | Consumer: Starting event loop
+[2025-05-21 13:28:17,640: DEBUG/MainProcess] | Worker: Hub.register Pool...
+[2025-05-21 13:28:17,641: INFO/MainProcess] celery@Emmanuels-MacBook-Pro.local ready.
+[2025-05-21 13:28:17,641: DEBUG/MainProcess] basic.qos: prefetch_count->10
+[2025-05-21 13:28:18,346: DEBUG/MainProcess] celery@ip-10-0-0-123.us-east-2.compute.internal joined the party
+[2025-05-21 13:39:43,083: DEBUG/MainProcess] | Worker: Preparing bootsteps.
+[2025-05-21 13:39:43,084: DEBUG/MainProcess] | Worker: Building graph...
+[2025-05-21 13:39:43,084: DEBUG/MainProcess] | Worker: New boot order: {Beat, StateDB, Timer, Hub, Pool, Autoscaler, Consumer}
+[2025-05-21 13:39:43,087: DEBUG/MainProcess] | Consumer: Preparing bootsteps.
+[2025-05-21 13:39:43,087: DEBUG/MainProcess] | Consumer: Building graph...
+[2025-05-21 13:39:43,092: DEBUG/MainProcess] | Consumer: New boot order: {Connection, Events, Heart, Mingle, Tasks, Control, Agent, DelayedDelivery, Gossip, event loop}
+[2025-05-21 13:39:43,108: DEBUG/MainProcess] | Worker: Starting Hub
+[2025-05-21 13:39:43,108: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:39:43,108: DEBUG/MainProcess] | Worker: Starting Pool
+[2025-05-21 13:39:43,500: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:39:43,500: DEBUG/MainProcess] | Worker: Starting Consumer
+[2025-05-21 13:39:43,500: DEBUG/MainProcess] | Consumer: Starting Connection
+[2025-05-21 13:39:43,506: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2025-05-21 13:39:43,506: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:39:43,506: DEBUG/MainProcess] | Consumer: Starting Events
+[2025-05-21 13:39:43,507: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:39:43,507: DEBUG/MainProcess] | Consumer: Starting Heart
+[2025-05-21 13:39:43,509: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:39:43,509: DEBUG/MainProcess] | Consumer: Starting Mingle
+[2025-05-21 13:39:43,509: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-21 13:39:43,510: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:39:43,510: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:39:43,510: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:39:43,524: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'd9837f90-3f73-3284-98e1-1cf6e540836b'} ticket:4f9692a5-91d9-4630-8bc9-8bc7bb2f81e6]
+[2025-05-21 13:39:43,524: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'd9837f90-3f73-3284-98e1-1cf6e540836b'} ticket:4f9692a5-91d9-4630-8bc9-8bc7bb2f81e6]
+[2025-05-21 13:39:43,524: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'd9837f90-3f73-3284-98e1-1cf6e540836b'} ticket:4f9692a5-91d9-4630-8bc9-8bc7bb2f81e6]
+[2025-05-21 13:39:43,524: INFO/MainProcess] sync with celery@Emmanuels-MacBook-Pro.local
+[2025-05-21 13:39:43,524: INFO/MainProcess] sync with celery@Emmanuels-MacBook-Pro.local
+[2025-05-21 13:39:43,524: INFO/MainProcess] sync with celery@Emmanuels-MacBook-Pro.local
+[2025-05-21 13:39:43,524: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'd9837f90-3f73-3284-98e1-1cf6e540836b'} ticket:4f9692a5-91d9-4630-8bc9-8bc7bb2f81e6]
+[2025-05-21 13:39:43,524: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'd9837f90-3f73-3284-98e1-1cf6e540836b'} ticket:4f9692a5-91d9-4630-8bc9-8bc7bb2f81e6]
+[2025-05-21 13:39:43,525: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'd9837f90-3f73-3284-98e1-1cf6e540836b'} ticket:4f9692a5-91d9-4630-8bc9-8bc7bb2f81e6]
+[2025-05-21 13:39:43,525: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'd9837f90-3f73-3284-98e1-1cf6e540836b'} ticket:4f9692a5-91d9-4630-8bc9-8bc7bb2f81e6]
+[2025-05-21 13:39:43,526: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'd9837f90-3f73-3284-98e1-1cf6e540836b'} ticket:4f9692a5-91d9-4630-8bc9-8bc7bb2f81e6]
+[2025-05-21 13:39:43,525: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'd9837f90-3f73-3284-98e1-1cf6e540836b'} ticket:4f9692a5-91d9-4630-8bc9-8bc7bb2f81e6]
+[2025-05-21 13:39:43,526: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'd9837f90-3f73-3284-98e1-1cf6e540836b'} ticket:4f9692a5-91d9-4630-8bc9-8bc7bb2f81e6]
+[2025-05-21 13:39:43,526: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'd9837f90-3f73-3284-98e1-1cf6e540836b'} ticket:4f9692a5-91d9-4630-8bc9-8bc7bb2f81e6]
+[2025-05-21 13:39:43,526: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'd9837f90-3f73-3284-98e1-1cf6e540836b'} ticket:4f9692a5-91d9-4630-8bc9-8bc7bb2f81e6]
+[2025-05-21 13:39:44,680: WARNING/MainProcess] /Users/emmanueltartey/PycharmProjects/analytics_worker/.venv/lib/python3.9/site-packages/celery/app/control.py:56: DuplicateNodenameWarning: Received multiple replies from node names: celery@Emmanuels-MacBook-Pro.local, celery@ip-10-0-0-123.us-east-2.compute.internal.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[2025-05-21 13:39:44,681: INFO/MainProcess] mingle: sync with 1 nodes
+[2025-05-21 13:39:44,681: DEBUG/MainProcess] mingle: processing reply from celery@ip-10-0-0-123.us-east-2.compute.internal
+[2025-05-21 13:39:44,681: INFO/MainProcess] mingle: sync complete
+[2025-05-21 13:39:44,681: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:39:44,681: DEBUG/MainProcess] | Consumer: Starting Tasks
+[2025-05-21 13:39:44,705: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:39:44,706: DEBUG/MainProcess] | Consumer: Starting Control
+[2025-05-21 13:39:44,711: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:39:44,711: DEBUG/MainProcess] | Consumer: Starting Gossip
+[2025-05-21 13:39:44,715: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:39:44,715: DEBUG/MainProcess] | Consumer: Starting event loop
+[2025-05-21 13:39:44,715: DEBUG/MainProcess] | Worker: Hub.register Pool...
+[2025-05-21 13:39:44,716: INFO/MainProcess] celery@Emmanuels-MacBook-Pro.local ready.
+[2025-05-21 13:39:44,716: DEBUG/MainProcess] basic.qos: prefetch_count->10
+[2025-05-21 13:39:44,810: DEBUG/MainProcess] celery@ip-10-0-0-123.us-east-2.compute.internal joined the party
+[2025-05-21 13:39:59,717: DEBUG/MainProcess] | Worker: Closing Hub...
+[2025-05-21 13:39:59,718: DEBUG/MainProcess] | Worker: Closing Pool...
+[2025-05-21 13:39:59,718: DEBUG/MainProcess] | Worker: Closing Consumer...
+[2025-05-21 13:39:59,718: DEBUG/MainProcess] | Worker: Stopping Consumer...
+[2025-05-21 13:39:59,718: DEBUG/MainProcess] | Consumer: Closing Connection...
+[2025-05-21 13:39:59,718: DEBUG/MainProcess] | Consumer: Closing Events...
+[2025-05-21 13:39:59,718: DEBUG/MainProcess] | Consumer: Closing Heart...
+[2025-05-21 13:39:59,718: DEBUG/MainProcess] | Consumer: Closing Mingle...
+[2025-05-21 13:39:59,718: DEBUG/MainProcess] | Consumer: Closing Tasks...
+[2025-05-21 13:39:59,718: DEBUG/MainProcess] | Consumer: Closing Control...
+[2025-05-21 13:39:59,718: DEBUG/MainProcess] | Consumer: Closing Gossip...
+[2025-05-21 13:39:59,718: DEBUG/MainProcess] | Consumer: Closing event loop...
+[2025-05-21 13:39:59,718: DEBUG/MainProcess] | Consumer: Stopping event loop...
+[2025-05-21 13:39:59,718: DEBUG/MainProcess] | Consumer: Stopping Gossip...
+[2025-05-21 13:39:59,739: DEBUG/MainProcess] | Consumer: Stopping Control...
+[2025-05-21 13:39:59,740: DEBUG/MainProcess] | Consumer: Stopping Tasks...
+[2025-05-21 13:39:59,740: DEBUG/MainProcess] Canceling task consumer...
+[2025-05-21 13:39:59,740: DEBUG/MainProcess] | Consumer: Stopping Mingle...
+[2025-05-21 13:39:59,740: DEBUG/MainProcess] | Consumer: Stopping Heart...
+[2025-05-21 13:39:59,741: DEBUG/MainProcess] | Consumer: Stopping Events...
+[2025-05-21 13:39:59,741: DEBUG/MainProcess] | Consumer: Stopping Connection...
+[2025-05-21 13:39:59,741: DEBUG/MainProcess] | Worker: Stopping Pool...
+[2025-05-21 13:39:59,743: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local left
+[2025-05-21 13:39:59,743: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local left
+[2025-05-21 13:39:59,743: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local left
+[2025-05-21 13:39:59,926: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:39:59,926: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:39:59,926: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:40:00,766: DEBUG/MainProcess] | Worker: Stopping Hub...
+[2025-05-21 13:40:00,766: DEBUG/MainProcess] | Consumer: Shutdown Gossip...
+[2025-05-21 13:40:00,766: DEBUG/MainProcess] | Consumer: Shutdown Control...
+[2025-05-21 13:40:00,766: DEBUG/MainProcess] | Consumer: Shutdown Tasks...
+[2025-05-21 13:40:00,766: DEBUG/MainProcess] Canceling task consumer...
+[2025-05-21 13:40:00,766: DEBUG/MainProcess] Closing consumer channel...
+[2025-05-21 13:40:00,766: DEBUG/MainProcess] | Consumer: Shutdown Heart...
+[2025-05-21 13:40:00,766: DEBUG/MainProcess] | Consumer: Shutdown Events...
+[2025-05-21 13:40:00,766: DEBUG/MainProcess] | Consumer: Shutdown Connection...
+[2025-05-21 13:40:00,767: DEBUG/MainProcess] removing tasks from inqueue until task handler finished
+[2025-05-21 13:40:02,453: DEBUG/MainProcess] | Worker: Preparing bootsteps.
+[2025-05-21 13:40:02,454: DEBUG/MainProcess] | Worker: Building graph...
+[2025-05-21 13:40:02,454: DEBUG/MainProcess] | Worker: New boot order: {Timer, Hub, Pool, Autoscaler, Beat, StateDB, Consumer}
+[2025-05-21 13:40:02,456: DEBUG/MainProcess] | Consumer: Preparing bootsteps.
+[2025-05-21 13:40:02,457: DEBUG/MainProcess] | Consumer: Building graph...
+[2025-05-21 13:40:02,462: DEBUG/MainProcess] | Consumer: New boot order: {Connection, Events, Mingle, Tasks, Control, DelayedDelivery, Agent, Heart, Gossip, event loop}
+[2025-05-21 13:40:02,477: DEBUG/MainProcess] | Worker: Starting Hub
+[2025-05-21 13:40:02,477: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:40:02,477: DEBUG/MainProcess] | Worker: Starting Pool
+[2025-05-21 13:40:02,795: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:40:02,795: DEBUG/MainProcess] | Worker: Starting Consumer
+[2025-05-21 13:40:02,795: DEBUG/MainProcess] | Consumer: Starting Connection
+[2025-05-21 13:40:02,801: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2025-05-21 13:40:02,801: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:40:02,801: DEBUG/MainProcess] | Consumer: Starting Events
+[2025-05-21 13:40:02,802: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:40:02,802: DEBUG/MainProcess] | Consumer: Starting Mingle
+[2025-05-21 13:40:02,802: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-21 13:40:02,807: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '95e98693-6580-3b94-92c6-448bd77e192d'} ticket:7bf6f7f2-52d6-40a9-9901-e866eb535d20]
+[2025-05-21 13:40:02,807: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '95e98693-6580-3b94-92c6-448bd77e192d'} ticket:7bf6f7f2-52d6-40a9-9901-e866eb535d20]
+[2025-05-21 13:40:02,807: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '95e98693-6580-3b94-92c6-448bd77e192d'} ticket:7bf6f7f2-52d6-40a9-9901-e866eb535d20]
+[2025-05-21 13:40:02,807: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '95e98693-6580-3b94-92c6-448bd77e192d'} ticket:7bf6f7f2-52d6-40a9-9901-e866eb535d20]
+[2025-05-21 13:40:02,807: INFO/MainProcess] sync with celery@Emmanuels-MacBook-Pro.local
+[2025-05-21 13:40:02,807: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '95e98693-6580-3b94-92c6-448bd77e192d'} ticket:7bf6f7f2-52d6-40a9-9901-e866eb535d20]
+[2025-05-21 13:40:02,807: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '95e98693-6580-3b94-92c6-448bd77e192d'} ticket:7bf6f7f2-52d6-40a9-9901-e866eb535d20]
+[2025-05-21 13:40:02,808: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '95e98693-6580-3b94-92c6-448bd77e192d'} ticket:7bf6f7f2-52d6-40a9-9901-e866eb535d20]
+[2025-05-21 13:40:02,808: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '95e98693-6580-3b94-92c6-448bd77e192d'} ticket:7bf6f7f2-52d6-40a9-9901-e866eb535d20]
+[2025-05-21 13:40:02,808: INFO/MainProcess] sync with celery@Emmanuels-MacBook-Pro.local
+[2025-05-21 13:40:02,808: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '95e98693-6580-3b94-92c6-448bd77e192d'} ticket:7bf6f7f2-52d6-40a9-9901-e866eb535d20]
+[2025-05-21 13:40:02,809: INFO/MainProcess] sync with celery@Emmanuels-MacBook-Pro.local
+[2025-05-21 13:40:02,808: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '95e98693-6580-3b94-92c6-448bd77e192d'} ticket:7bf6f7f2-52d6-40a9-9901-e866eb535d20]
+[2025-05-21 13:40:02,809: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '95e98693-6580-3b94-92c6-448bd77e192d'} ticket:7bf6f7f2-52d6-40a9-9901-e866eb535d20]
+[2025-05-21 13:40:02,808: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '95e98693-6580-3b94-92c6-448bd77e192d'} ticket:7bf6f7f2-52d6-40a9-9901-e866eb535d20]
+[2025-05-21 13:40:03,894: WARNING/MainProcess] /Users/emmanueltartey/PycharmProjects/analytics_worker/.venv/lib/python3.9/site-packages/celery/app/control.py:56: DuplicateNodenameWarning: Received multiple replies from node names: celery@Emmanuels-MacBook-Pro.local, celery@ip-10-0-0-123.us-east-2.compute.internal.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[2025-05-21 13:40:03,894: INFO/MainProcess] mingle: sync with 1 nodes
+[2025-05-21 13:40:03,894: DEBUG/MainProcess] mingle: processing reply from celery@ip-10-0-0-123.us-east-2.compute.internal
+[2025-05-21 13:40:03,894: INFO/MainProcess] mingle: sync complete
+[2025-05-21 13:40:03,894: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:40:03,894: DEBUG/MainProcess] | Consumer: Starting Tasks
+[2025-05-21 13:40:03,900: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:40:03,900: DEBUG/MainProcess] | Consumer: Starting Control
+[2025-05-21 13:40:03,906: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:40:03,906: DEBUG/MainProcess] | Consumer: Starting Heart
+[2025-05-21 13:40:03,908: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:40:03,908: DEBUG/MainProcess] | Consumer: Starting Gossip
+[2025-05-21 13:40:03,909: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:40:03,909: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:40:03,909: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:40:03,927: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:40:03,928: DEBUG/MainProcess] | Consumer: Starting event loop
+[2025-05-21 13:40:03,928: DEBUG/MainProcess] | Worker: Hub.register Pool...
+[2025-05-21 13:40:03,928: INFO/MainProcess] celery@Emmanuels-MacBook-Pro.local ready.
+[2025-05-21 13:40:03,928: DEBUG/MainProcess] basic.qos: prefetch_count->10
+[2025-05-21 13:40:04,129: DEBUG/MainProcess] celery@ip-10-0-0-123.us-east-2.compute.internal joined the party
+[2025-05-21 13:44:24,284: DEBUG/MainProcess] | Worker: Preparing bootsteps.
+[2025-05-21 13:44:24,285: DEBUG/MainProcess] | Worker: Building graph...
+[2025-05-21 13:44:24,285: DEBUG/MainProcess] | Worker: New boot order: {Timer, Hub, Pool, Autoscaler, StateDB, Beat, Consumer}
+[2025-05-21 13:44:24,290: DEBUG/MainProcess] | Consumer: Preparing bootsteps.
+[2025-05-21 13:44:24,290: DEBUG/MainProcess] | Consumer: Building graph...
+[2025-05-21 13:44:24,295: DEBUG/MainProcess] | Consumer: New boot order: {Connection, Events, Mingle, Tasks, Control, Agent, DelayedDelivery, Heart, Gossip, event loop}
+[2025-05-21 13:44:24,312: DEBUG/MainProcess] | Worker: Starting Hub
+[2025-05-21 13:44:24,312: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:44:24,312: DEBUG/MainProcess] | Worker: Starting Pool
+[2025-05-21 13:44:24,655: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:44:24,656: DEBUG/MainProcess] | Worker: Starting Consumer
+[2025-05-21 13:44:24,656: DEBUG/MainProcess] | Consumer: Starting Connection
+[2025-05-21 13:44:24,672: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2025-05-21 13:44:24,672: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:44:24,672: DEBUG/MainProcess] | Consumer: Starting Events
+[2025-05-21 13:44:24,674: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:44:24,674: DEBUG/MainProcess] | Consumer: Starting Mingle
+[2025-05-21 13:44:24,674: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-21 13:44:24,679: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '33fe5461-e5db-3941-bc9e-08014ea6acba'} ticket:aa77eee5-fc53-43eb-aa46-6d31379b991f]
+[2025-05-21 13:44:24,679: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '33fe5461-e5db-3941-bc9e-08014ea6acba'} ticket:aa77eee5-fc53-43eb-aa46-6d31379b991f]
+[2025-05-21 13:44:24,679: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '33fe5461-e5db-3941-bc9e-08014ea6acba'} ticket:aa77eee5-fc53-43eb-aa46-6d31379b991f]
+[2025-05-21 13:44:24,679: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '33fe5461-e5db-3941-bc9e-08014ea6acba'} ticket:aa77eee5-fc53-43eb-aa46-6d31379b991f]
+[2025-05-21 13:44:24,679: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '33fe5461-e5db-3941-bc9e-08014ea6acba'} ticket:aa77eee5-fc53-43eb-aa46-6d31379b991f]
+[2025-05-21 13:44:24,680: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '33fe5461-e5db-3941-bc9e-08014ea6acba'} ticket:aa77eee5-fc53-43eb-aa46-6d31379b991f]
+[2025-05-21 13:44:24,680: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '33fe5461-e5db-3941-bc9e-08014ea6acba'} ticket:aa77eee5-fc53-43eb-aa46-6d31379b991f]
+[2025-05-21 13:44:24,681: INFO/MainProcess] sync with celery@Emmanuels-MacBook-Pro.local
+[2025-05-21 13:44:24,681: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '33fe5461-e5db-3941-bc9e-08014ea6acba'} ticket:aa77eee5-fc53-43eb-aa46-6d31379b991f]
+[2025-05-21 13:44:24,681: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '33fe5461-e5db-3941-bc9e-08014ea6acba'} ticket:aa77eee5-fc53-43eb-aa46-6d31379b991f]
+[2025-05-21 13:44:24,679: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '33fe5461-e5db-3941-bc9e-08014ea6acba'} ticket:aa77eee5-fc53-43eb-aa46-6d31379b991f]
+[2025-05-21 13:44:24,681: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '33fe5461-e5db-3941-bc9e-08014ea6acba'} ticket:aa77eee5-fc53-43eb-aa46-6d31379b991f]
+[2025-05-21 13:44:24,680: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '33fe5461-e5db-3941-bc9e-08014ea6acba'} ticket:aa77eee5-fc53-43eb-aa46-6d31379b991f]
+[2025-05-21 13:44:24,682: INFO/MainProcess] sync with celery@Emmanuels-MacBook-Pro.local
+[2025-05-21 13:44:24,682: INFO/MainProcess] sync with celery@Emmanuels-MacBook-Pro.local
+[2025-05-21 13:44:24,681: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '33fe5461-e5db-3941-bc9e-08014ea6acba'} ticket:aa77eee5-fc53-43eb-aa46-6d31379b991f]
+[2025-05-21 13:44:25,806: WARNING/MainProcess] /Users/emmanueltartey/PycharmProjects/analytics_worker/.venv/lib/python3.9/site-packages/celery/app/control.py:56: DuplicateNodenameWarning: Received multiple replies from node names: celery@Emmanuels-MacBook-Pro.local, celery@ip-10-0-0-123.us-east-2.compute.internal.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[2025-05-21 13:44:25,806: INFO/MainProcess] mingle: sync with 1 nodes
+[2025-05-21 13:44:25,806: DEBUG/MainProcess] mingle: processing reply from celery@ip-10-0-0-123.us-east-2.compute.internal
+[2025-05-21 13:44:25,806: INFO/MainProcess] mingle: sync complete
+[2025-05-21 13:44:25,806: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:44:25,806: DEBUG/MainProcess] | Consumer: Starting Tasks
+[2025-05-21 13:44:25,818: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:44:25,818: DEBUG/MainProcess] | Consumer: Starting Control
+[2025-05-21 13:44:25,822: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:44:25,822: DEBUG/MainProcess] | Consumer: Starting Heart
+[2025-05-21 13:44:25,823: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:44:25,823: DEBUG/MainProcess] | Consumer: Starting Gossip
+[2025-05-21 13:44:25,824: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:44:25,824: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:44:25,824: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:44:25,830: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:44:25,830: DEBUG/MainProcess] | Consumer: Starting event loop
+[2025-05-21 13:44:25,831: DEBUG/MainProcess] | Worker: Hub.register Pool...
+[2025-05-21 13:44:25,831: INFO/MainProcess] celery@Emmanuels-MacBook-Pro.local ready.
+[2025-05-21 13:44:25,831: DEBUG/MainProcess] basic.qos: prefetch_count->10
+[2025-05-21 13:44:26,761: DEBUG/MainProcess] celery@ip-10-0-0-123.us-east-2.compute.internal joined the party
+[2025-05-21 13:45:05,939: DEBUG/MainProcess] | Worker: Preparing bootsteps.
+[2025-05-21 13:45:05,940: DEBUG/MainProcess] | Worker: Building graph...
+[2025-05-21 13:45:05,940: DEBUG/MainProcess] | Worker: New boot order: {Timer, Hub, Pool, Autoscaler, StateDB, Beat, Consumer}
+[2025-05-21 13:45:05,943: DEBUG/MainProcess] | Consumer: Preparing bootsteps.
+[2025-05-21 13:45:05,943: DEBUG/MainProcess] | Consumer: Building graph...
+[2025-05-21 13:45:05,948: DEBUG/MainProcess] | Consumer: New boot order: {Connection, Agent, Events, Mingle, Gossip, Heart, Tasks, DelayedDelivery, Control, event loop}
+[2025-05-21 13:45:05,965: DEBUG/MainProcess] | Worker: Starting Hub
+[2025-05-21 13:45:05,965: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:45:05,965: DEBUG/MainProcess] | Worker: Starting Pool
+[2025-05-21 13:45:06,313: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:45:06,313: DEBUG/MainProcess] | Worker: Starting Consumer
+[2025-05-21 13:45:06,313: DEBUG/MainProcess] | Consumer: Starting Connection
+[2025-05-21 13:45:06,318: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2025-05-21 13:45:06,318: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:45:06,318: DEBUG/MainProcess] | Consumer: Starting Events
+[2025-05-21 13:45:06,319: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:45:06,319: DEBUG/MainProcess] | Consumer: Starting Mingle
+[2025-05-21 13:45:06,319: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-21 13:45:06,323: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'c0fa2ce0-05fc-38fe-adf1-cdef5d2bc211'} ticket:6f6fa566-48a9-4fb9-bb3c-4451b550fd9d]
+[2025-05-21 13:45:06,323: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'c0fa2ce0-05fc-38fe-adf1-cdef5d2bc211'} ticket:6f6fa566-48a9-4fb9-bb3c-4451b550fd9d]
+[2025-05-21 13:45:06,323: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'c0fa2ce0-05fc-38fe-adf1-cdef5d2bc211'} ticket:6f6fa566-48a9-4fb9-bb3c-4451b550fd9d]
+[2025-05-21 13:45:06,323: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'c0fa2ce0-05fc-38fe-adf1-cdef5d2bc211'} ticket:6f6fa566-48a9-4fb9-bb3c-4451b550fd9d]
+[2025-05-21 13:45:06,323: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'c0fa2ce0-05fc-38fe-adf1-cdef5d2bc211'} ticket:6f6fa566-48a9-4fb9-bb3c-4451b550fd9d]
+[2025-05-21 13:45:06,324: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'c0fa2ce0-05fc-38fe-adf1-cdef5d2bc211'} ticket:6f6fa566-48a9-4fb9-bb3c-4451b550fd9d]
+[2025-05-21 13:45:06,324: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'c0fa2ce0-05fc-38fe-adf1-cdef5d2bc211'} ticket:6f6fa566-48a9-4fb9-bb3c-4451b550fd9d]
+[2025-05-21 13:45:06,324: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'c0fa2ce0-05fc-38fe-adf1-cdef5d2bc211'} ticket:6f6fa566-48a9-4fb9-bb3c-4451b550fd9d]
+[2025-05-21 13:45:06,324: INFO/MainProcess] sync with celery@Emmanuels-MacBook-Pro.local
+[2025-05-21 13:45:06,325: INFO/MainProcess] sync with celery@Emmanuels-MacBook-Pro.local
+[2025-05-21 13:45:06,325: INFO/MainProcess] sync with celery@Emmanuels-MacBook-Pro.local
+[2025-05-21 13:45:06,324: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'c0fa2ce0-05fc-38fe-adf1-cdef5d2bc211'} ticket:6f6fa566-48a9-4fb9-bb3c-4451b550fd9d]
+[2025-05-21 13:45:06,323: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'c0fa2ce0-05fc-38fe-adf1-cdef5d2bc211'} ticket:6f6fa566-48a9-4fb9-bb3c-4451b550fd9d]
+[2025-05-21 13:45:06,325: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'c0fa2ce0-05fc-38fe-adf1-cdef5d2bc211'} ticket:6f6fa566-48a9-4fb9-bb3c-4451b550fd9d]
+[2025-05-21 13:45:06,325: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'c0fa2ce0-05fc-38fe-adf1-cdef5d2bc211'} ticket:6f6fa566-48a9-4fb9-bb3c-4451b550fd9d]
+[2025-05-21 13:45:06,325: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'c0fa2ce0-05fc-38fe-adf1-cdef5d2bc211'} ticket:6f6fa566-48a9-4fb9-bb3c-4451b550fd9d]
+[2025-05-21 13:45:06,325: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': 'c0fa2ce0-05fc-38fe-adf1-cdef5d2bc211'} ticket:6f6fa566-48a9-4fb9-bb3c-4451b550fd9d]
+[2025-05-21 13:45:07,417: WARNING/MainProcess] /Users/emmanueltartey/PycharmProjects/analytics_worker/.venv/lib/python3.9/site-packages/celery/app/control.py:56: DuplicateNodenameWarning: Received multiple replies from node names: celery@Emmanuels-MacBook-Pro.local, celery@ip-10-0-0-123.us-east-2.compute.internal.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[2025-05-21 13:45:07,417: INFO/MainProcess] mingle: sync with 1 nodes
+[2025-05-21 13:45:07,418: DEBUG/MainProcess] mingle: processing reply from celery@ip-10-0-0-123.us-east-2.compute.internal
+[2025-05-21 13:45:07,418: INFO/MainProcess] mingle: sync complete
+[2025-05-21 13:45:07,418: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:45:07,418: DEBUG/MainProcess] | Consumer: Starting Gossip
+[2025-05-21 13:45:07,422: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:45:07,422: DEBUG/MainProcess] | Consumer: Starting Heart
+[2025-05-21 13:45:07,424: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:45:07,424: DEBUG/MainProcess] | Consumer: Starting Tasks
+[2025-05-21 13:45:07,425: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:45:07,425: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:45:07,425: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:45:07,438: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:45:07,438: DEBUG/MainProcess] | Consumer: Starting Control
+[2025-05-21 13:45:07,442: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:45:07,442: DEBUG/MainProcess] | Consumer: Starting event loop
+[2025-05-21 13:45:07,442: DEBUG/MainProcess] | Worker: Hub.register Pool...
+[2025-05-21 13:45:07,442: INFO/MainProcess] celery@Emmanuels-MacBook-Pro.local ready.
+[2025-05-21 13:45:07,443: DEBUG/MainProcess] basic.qos: prefetch_count->10
+[2025-05-21 13:45:07,625: DEBUG/MainProcess] celery@ip-10-0-0-123.us-east-2.compute.internal joined the party
+[2025-05-21 13:55:16,674: DEBUG/MainProcess] | Worker: Preparing bootsteps.
+[2025-05-21 13:55:16,675: DEBUG/MainProcess] | Worker: Building graph...
+[2025-05-21 13:55:16,675: DEBUG/MainProcess] | Worker: New boot order: {StateDB, Beat, Timer, Hub, Pool, Autoscaler, Consumer}
+[2025-05-21 13:55:16,679: DEBUG/MainProcess] | Consumer: Preparing bootsteps.
+[2025-05-21 13:55:16,680: DEBUG/MainProcess] | Consumer: Building graph...
+[2025-05-21 13:55:16,686: DEBUG/MainProcess] | Consumer: New boot order: {Connection, Events, Mingle, Tasks, DelayedDelivery, Agent, Gossip, Heart, Control, event loop}
+[2025-05-21 13:55:16,703: DEBUG/MainProcess] | Worker: Starting Hub
+[2025-05-21 13:55:16,703: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:55:16,703: DEBUG/MainProcess] | Worker: Starting Pool
+[2025-05-21 13:55:17,054: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:55:17,054: DEBUG/MainProcess] | Worker: Starting Consumer
+[2025-05-21 13:55:17,055: DEBUG/MainProcess] | Consumer: Starting Connection
+[2025-05-21 13:55:17,071: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2025-05-21 13:55:17,071: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:55:17,071: DEBUG/MainProcess] | Consumer: Starting Events
+[2025-05-21 13:55:17,073: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:55:17,073: DEBUG/MainProcess] | Consumer: Starting Mingle
+[2025-05-21 13:55:17,073: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-21 13:55:17,077: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '57c21d90-3bcc-3192-b13e-62bdefdf9a77'} ticket:ed3d7362-87c4-4e6c-81e6-59ba81842cb4]
+[2025-05-21 13:55:17,077: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '57c21d90-3bcc-3192-b13e-62bdefdf9a77'} ticket:ed3d7362-87c4-4e6c-81e6-59ba81842cb4]
+[2025-05-21 13:55:17,078: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '57c21d90-3bcc-3192-b13e-62bdefdf9a77'} ticket:ed3d7362-87c4-4e6c-81e6-59ba81842cb4]
+[2025-05-21 13:55:17,078: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '57c21d90-3bcc-3192-b13e-62bdefdf9a77'} ticket:ed3d7362-87c4-4e6c-81e6-59ba81842cb4]
+[2025-05-21 13:55:17,078: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '57c21d90-3bcc-3192-b13e-62bdefdf9a77'} ticket:ed3d7362-87c4-4e6c-81e6-59ba81842cb4]
+[2025-05-21 13:55:17,078: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '57c21d90-3bcc-3192-b13e-62bdefdf9a77'} ticket:ed3d7362-87c4-4e6c-81e6-59ba81842cb4]
+[2025-05-21 13:55:17,079: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '57c21d90-3bcc-3192-b13e-62bdefdf9a77'} ticket:ed3d7362-87c4-4e6c-81e6-59ba81842cb4]
+[2025-05-21 13:55:17,079: INFO/MainProcess] sync with celery@Emmanuels-MacBook-Pro.local
+[2025-05-21 13:55:17,080: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '57c21d90-3bcc-3192-b13e-62bdefdf9a77'} ticket:ed3d7362-87c4-4e6c-81e6-59ba81842cb4]
+[2025-05-21 13:55:17,080: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '57c21d90-3bcc-3192-b13e-62bdefdf9a77'} ticket:ed3d7362-87c4-4e6c-81e6-59ba81842cb4]
+[2025-05-21 13:55:17,079: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '57c21d90-3bcc-3192-b13e-62bdefdf9a77'} ticket:ed3d7362-87c4-4e6c-81e6-59ba81842cb4]
+[2025-05-21 13:55:17,080: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '57c21d90-3bcc-3192-b13e-62bdefdf9a77'} ticket:ed3d7362-87c4-4e6c-81e6-59ba81842cb4]
+[2025-05-21 13:55:17,081: INFO/MainProcess] sync with celery@Emmanuels-MacBook-Pro.local
+[2025-05-21 13:55:17,081: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '57c21d90-3bcc-3192-b13e-62bdefdf9a77'} ticket:ed3d7362-87c4-4e6c-81e6-59ba81842cb4]
+[2025-05-21 13:55:17,082: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '57c21d90-3bcc-3192-b13e-62bdefdf9a77'} ticket:ed3d7362-87c4-4e6c-81e6-59ba81842cb4]
+[2025-05-21 13:55:17,082: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '57c21d90-3bcc-3192-b13e-62bdefdf9a77'} ticket:ed3d7362-87c4-4e6c-81e6-59ba81842cb4]
+[2025-05-21 13:55:17,082: INFO/MainProcess] sync with celery@Emmanuels-MacBook-Pro.local
+[2025-05-21 13:55:17,083: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '57c21d90-3bcc-3192-b13e-62bdefdf9a77'} ticket:ed3d7362-87c4-4e6c-81e6-59ba81842cb4]
+[2025-05-21 13:55:18,174: WARNING/MainProcess] /Users/emmanueltartey/PycharmProjects/analytics_worker/.venv/lib/python3.9/site-packages/celery/app/control.py:56: DuplicateNodenameWarning: Received multiple replies from node names: celery@Emmanuels-MacBook-Pro.local, celery@ip-10-0-0-123.us-east-2.compute.internal.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[2025-05-21 13:55:18,175: INFO/MainProcess] mingle: sync with 1 nodes
+[2025-05-21 13:55:18,177: DEBUG/MainProcess] mingle: processing reply from celery@ip-10-0-0-123.us-east-2.compute.internal
+[2025-05-21 13:55:18,177: INFO/MainProcess] mingle: sync complete
+[2025-05-21 13:55:18,177: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:55:18,177: DEBUG/MainProcess] | Consumer: Starting Tasks
+[2025-05-21 13:55:18,203: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:55:18,203: DEBUG/MainProcess] | Consumer: Starting Gossip
+[2025-05-21 13:55:18,258: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:55:18,259: DEBUG/MainProcess] | Consumer: Starting Heart
+[2025-05-21 13:55:18,265: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:55:18,265: DEBUG/MainProcess] | Consumer: Starting Control
+[2025-05-21 13:55:18,265: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:55:18,267: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:55:18,266: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:55:18,276: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:55:18,276: DEBUG/MainProcess] | Consumer: Starting event loop
+[2025-05-21 13:55:18,276: DEBUG/MainProcess] | Worker: Hub.register Pool...
+[2025-05-21 13:55:18,277: INFO/MainProcess] celery@Emmanuels-MacBook-Pro.local ready.
+[2025-05-21 13:55:18,277: DEBUG/MainProcess] basic.qos: prefetch_count->10
+[2025-05-21 13:55:18,493: DEBUG/MainProcess] celery@ip-10-0-0-123.us-east-2.compute.internal joined the party
+[2025-05-21 13:55:38,198: DEBUG/MainProcess] | Worker: Preparing bootsteps.
+[2025-05-21 13:55:38,199: DEBUG/MainProcess] | Worker: Building graph...
+[2025-05-21 13:55:38,199: DEBUG/MainProcess] | Worker: New boot order: {Beat, StateDB, Timer, Hub, Pool, Autoscaler, Consumer}
+[2025-05-21 13:55:38,202: DEBUG/MainProcess] | Consumer: Preparing bootsteps.
+[2025-05-21 13:55:38,203: DEBUG/MainProcess] | Consumer: Building graph...
+[2025-05-21 13:55:38,208: DEBUG/MainProcess] | Consumer: New boot order: {Connection, Events, Heart, Mingle, Gossip, Agent, Tasks, Control, DelayedDelivery, event loop}
+[2025-05-21 13:55:38,223: DEBUG/MainProcess] | Worker: Starting Hub
+[2025-05-21 13:55:38,223: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:55:38,223: DEBUG/MainProcess] | Worker: Starting Pool
+[2025-05-21 13:55:38,581: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:55:38,581: DEBUG/MainProcess] | Worker: Starting Consumer
+[2025-05-21 13:55:38,582: DEBUG/MainProcess] | Consumer: Starting Connection
+[2025-05-21 13:55:38,586: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2025-05-21 13:55:38,586: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:55:38,586: DEBUG/MainProcess] | Consumer: Starting Events
+[2025-05-21 13:55:38,588: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:55:38,588: DEBUG/MainProcess] | Consumer: Starting Heart
+[2025-05-21 13:55:38,589: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:55:38,589: DEBUG/MainProcess] | Consumer: Starting Mingle
+[2025-05-21 13:55:38,589: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-21 13:55:38,590: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:55:38,590: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:55:38,590: DEBUG/MainProcess] celery@Emmanuels-MacBook-Pro.local joined the party
+[2025-05-21 13:55:38,615: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '9d5f38d6-f5ab-3f7e-a03d-3bed46ce4d9b'} ticket:71e1ac23-64e0-4329-bb69-c0f7fdd32faa]
+[2025-05-21 13:55:38,615: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '9d5f38d6-f5ab-3f7e-a03d-3bed46ce4d9b'} ticket:71e1ac23-64e0-4329-bb69-c0f7fdd32faa]
+[2025-05-21 13:55:38,615: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '9d5f38d6-f5ab-3f7e-a03d-3bed46ce4d9b'} ticket:71e1ac23-64e0-4329-bb69-c0f7fdd32faa]
+[2025-05-21 13:55:38,615: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '9d5f38d6-f5ab-3f7e-a03d-3bed46ce4d9b'} ticket:71e1ac23-64e0-4329-bb69-c0f7fdd32faa]
+[2025-05-21 13:55:38,615: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '9d5f38d6-f5ab-3f7e-a03d-3bed46ce4d9b'} ticket:71e1ac23-64e0-4329-bb69-c0f7fdd32faa]
+[2025-05-21 13:55:38,615: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '9d5f38d6-f5ab-3f7e-a03d-3bed46ce4d9b'} ticket:71e1ac23-64e0-4329-bb69-c0f7fdd32faa]
+[2025-05-21 13:55:38,615: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '9d5f38d6-f5ab-3f7e-a03d-3bed46ce4d9b'} ticket:71e1ac23-64e0-4329-bb69-c0f7fdd32faa]
+[2025-05-21 13:55:38,615: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '9d5f38d6-f5ab-3f7e-a03d-3bed46ce4d9b'} ticket:71e1ac23-64e0-4329-bb69-c0f7fdd32faa]
+[2025-05-21 13:55:38,615: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '9d5f38d6-f5ab-3f7e-a03d-3bed46ce4d9b'} ticket:71e1ac23-64e0-4329-bb69-c0f7fdd32faa]
+[2025-05-21 13:55:38,616: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '9d5f38d6-f5ab-3f7e-a03d-3bed46ce4d9b'} ticket:71e1ac23-64e0-4329-bb69-c0f7fdd32faa]
+[2025-05-21 13:55:38,616: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '9d5f38d6-f5ab-3f7e-a03d-3bed46ce4d9b'} ticket:71e1ac23-64e0-4329-bb69-c0f7fdd32faa]
+[2025-05-21 13:55:38,616: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '9d5f38d6-f5ab-3f7e-a03d-3bed46ce4d9b'} ticket:71e1ac23-64e0-4329-bb69-c0f7fdd32faa]
+[2025-05-21 13:55:38,616: INFO/MainProcess] sync with celery@Emmanuels-MacBook-Pro.local
+[2025-05-21 13:55:38,616: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '9d5f38d6-f5ab-3f7e-a03d-3bed46ce4d9b'} ticket:71e1ac23-64e0-4329-bb69-c0f7fdd32faa]
+[2025-05-21 13:55:38,616: INFO/MainProcess] sync with celery@Emmanuels-MacBook-Pro.local
+[2025-05-21 13:55:38,616: INFO/MainProcess] sync with celery@Emmanuels-MacBook-Pro.local
+[2025-05-21 13:55:38,620: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '9d5f38d6-f5ab-3f7e-a03d-3bed46ce4d9b'} ticket:71e1ac23-64e0-4329-bb69-c0f7fdd32faa]
+[2025-05-21 13:55:38,622: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '9d5f38d6-f5ab-3f7e-a03d-3bed46ce4d9b'} ticket:71e1ac23-64e0-4329-bb69-c0f7fdd32faa]
+[2025-05-21 13:55:38,622: DEBUG/MainProcess] pidbox received method hello(from_node='celery@Emmanuels-MacBook-Pro.local', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '9d5f38d6-f5ab-3f7e-a03d-3bed46ce4d9b'} ticket:71e1ac23-64e0-4329-bb69-c0f7fdd32faa]
+[2025-05-21 13:55:39,698: WARNING/MainProcess] /Users/emmanueltartey/PycharmProjects/analytics_worker/.venv/lib/python3.9/site-packages/celery/app/control.py:56: DuplicateNodenameWarning: Received multiple replies from node names: celery@Emmanuels-MacBook-Pro.local, celery@ip-10-0-0-123.us-east-2.compute.internal.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[2025-05-21 13:55:39,699: INFO/MainProcess] mingle: sync with 1 nodes
+[2025-05-21 13:55:39,699: DEBUG/MainProcess] mingle: processing reply from celery@ip-10-0-0-123.us-east-2.compute.internal
+[2025-05-21 13:55:39,699: INFO/MainProcess] mingle: sync complete
+[2025-05-21 13:55:39,699: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:55:39,699: DEBUG/MainProcess] | Consumer: Starting Gossip
+[2025-05-21 13:55:39,703: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:55:39,703: DEBUG/MainProcess] | Consumer: Starting Tasks
+[2025-05-21 13:55:39,705: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:55:39,705: DEBUG/MainProcess] | Consumer: Starting Control
+[2025-05-21 13:55:39,721: DEBUG/MainProcess] ^-- substep ok
+[2025-05-21 13:55:39,721: DEBUG/MainProcess] | Consumer: Starting event loop
+[2025-05-21 13:55:39,721: DEBUG/MainProcess] | Worker: Hub.register Pool...
+[2025-05-21 13:55:39,722: INFO/MainProcess] celery@Emmanuels-MacBook-Pro.local ready.
+[2025-05-21 13:55:39,722: DEBUG/MainProcess] basic.qos: prefetch_count->10
+[2025-05-21 13:55:40,567: DEBUG/MainProcess] celery@ip-10-0-0-123.us-east-2.compute.internal joined the party
