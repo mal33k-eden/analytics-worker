@@ -23,8 +23,6 @@ def process_analytics_batch(batch_size=1000):
     """
     Process a batch of unprocessed analytics data rows.
     """
-    import logging
-    logger = logging.getLogger(__name__)
 
     logger.info(f"Starting analytics batch processing with size {batch_size}")
 

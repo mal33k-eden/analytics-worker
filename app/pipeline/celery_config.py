@@ -32,9 +32,7 @@ if celery_app is not None:
         worker_prefetch_multiplier=1,  # Don't prefetch more tasks than can be processed
         task_track_started=True,  # Mark tasks as started when they start running
     )
-
-    # Set up task imports explicitly
-    celery_app.conf.imports = ('app.pipeline.processor',)
+ 
     # Define periodic tasks
     celery_app.conf.beat_schedule = {
         'process-analytics-data-every-minute': {
